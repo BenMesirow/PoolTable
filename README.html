@@ -1,0 +1,137 @@
+<html>
+<head>
+    <title>Ben Mesirow - GRAPHICS FINAL PROJECT</title>
+    <style>
+        .style1
+        {
+            font-size: xx-small;
+        }
+        .style5
+        {
+            color: #FFFFFF;
+        }
+        .style7
+        {
+            height: 203px;
+        }
+        .style9
+        {
+            text-decoration: none;
+            color: #FFFFFF;
+        }
+        .style11
+        {
+            text-decoration: none;
+        }
+        .style12
+        {
+            color: #000000;
+        }
+        .style13
+        {
+            color: #FFFFFF;
+            width: 136px;
+        }
+        .style14
+        {
+            height: 203px;
+            width: 136px;
+        }
+        .style15
+        {
+            color: #FFFFFF;
+            height: 54px;
+        }
+        
+        .wrapImage
+        {
+            float: left;
+            margin: 4px;
+        }
+        
+    </style>
+</head>
+<body bgcolor="#FFFFFF">
+
+<table align="center" border="0"     style="border-style: none; width: 800px; height: 44px;">
+        <tr>
+            <td bgcolor="#300F00" class="style15" style="border-style: 0; border-width: 0px;">
+                <b>
+                Ben Mesirow<br>
+                Pool Table<br>
+                Comp 175 - Computer Graphics<br>
+                Final Project
+                </b>
+            </td>
+        </tr>
+        <tr>
+                
+            <td class="style7" valign="top">
+                <br />
+                <table align="center" style="width: 95%; height: 40px;">
+                    <tr colspan="2">
+                        <td bgcolor="#6699CC" colspan="2">
+                            Description
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            For my final project I made a pool table simulator.
+                            When you set the applied force vector components and
+                            click "strike cue ball", the balls bounce off of one
+                            another and the edges when they collide in the same
+                            way that they would in real life.  Collisions are 
+                            partially elastic, meaning the balls lose some 
+                            kinetic energy upon impact with each other or with
+                            table edges, as well as from friction with the table
+                            surface.  
+                        </td>
+                    </tr>
+                    
+                    
+                    <tr >
+                        <td bgcolor="#6699CC" colspan="2">
+                            Technical Contributions
+                        </td>
+                    </tr>
+                    
+                    <tr >
+                        <td colspan="2"> 
+                            Building on certain analogous priciples of ray tracing, I
+                            created a model in showing the way solid objects bounce off of each other similar to the way light bounces off a reflective surface.  The xml and scene parsers, shape interface files, and Algebra.h were written by my professor and used for multiple projects during the course.  The bulk of my work is done in main.cpp, pool.*, physics.h, and ball.*.  I also implemented the shape concrete classes with a partner as part of an
+                            earlier project in the course.  The executable file "pool" was compiled on a 64-bit
+                            mac, so it will need to be recompiled to run if you are using a different system (see the Makefile).  Keep in mind that this project uses OpenGL as a dependency, so be sure that it is installed before compiling.  The Makefile may need to be altered slightly depending on the location of the OpenGL header file on your system. 
+                        </td>
+                    </tr>
+                    
+                    <tr >
+                        <td bgcolor="#6699CC" colspan="2">
+                            Screenshots
+                        </td>
+                    </tr>
+                    
+                    <tr colspan="2">
+                        <td valign="top">
+                            <img src="img/pool1.png" class="wrapImage" alt="Facial Animation Morph" width="400px" height="250px"/>
+                            Figure 1 - The pool table in its initial state.
+                        </td>
+                        <td valign="top">
+                            <img src="img/pool2.png" class="wrapImage" alt="Facial Animation Morph" width="400px" height="250px"/>
+                            Figure 2 - The ball configuration after breaking up the Pascal triangle with the cue ball.
+                        </td>
+                    </tr>
+
+
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td align="center" class="style1" colspan="2" valign="top">
+                All Contents on this site belong to their authors and may not be used in any 
+                form without contacting the author and receiving written permission.
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>
